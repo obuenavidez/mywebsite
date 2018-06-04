@@ -17,7 +17,7 @@ import Projects from "./pages/Projects";
 //import Products from "./pages/Products";
 
 import Home from "./pages/Home";
-import Footer from "./components/Footer";
+//import Footer from "./components/Footer";
 
 
 
