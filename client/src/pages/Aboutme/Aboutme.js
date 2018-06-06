@@ -1,7 +1,9 @@
 import React from "react";
-import Hero from "../../components/Hero";
+//import Hero from "../../components/Hero";
+
 //import DeleteBtn from "../../components/DeleteBtn";
 // import API from "../../utils/API";
+
 
 
 import { Col, Row, Container } from "../../components/Grid";
@@ -10,11 +12,15 @@ import { Col, Row, Container } from "../../components/Grid";
 
 // import {  FormBtn } from "../../components/Form";
 
-import Jumbotron from "../../components/Jumbotron";
-import { Link } from "react-router-dom";
+//import Jumbotron from "../../components/Jumbotron";
+//import { Link } from "react-router-dom";
 
-import { FormBtn } from "../../components/Form";
+//import { FormBtn } from "../../components/Form";
+//import { FormBtnCenter } from "../../components/Form";
+import FriendCard3 from "../../components/FriendCard3";
+import { FormBtnCenter } from "../../components/Form";
 
+import LeftNav from "../../components/LeftNav";
 
 
 
@@ -29,71 +35,103 @@ const Orders = () => (
 
         <Col size="md-8">
           <h2> About Me</h2>
+          <h4> Latest Project</h4> 
         </Col>
        </Row>
 
        <Row>
        <Col size="md-4">
-       <Hero backgroundImage="/assets/images/ODB.NorthWestern.png">
+       {/* <Hero backgroundImage="/assets/images/ODB.NorthWestern.png">
        
             <h3><center>"If you can think it ... I can do it "</center></h3>
             {/* <button>More Photos </button> */}
-      </Hero>
+      {/* </Hero> */}
        {/* <Jumbotron backgroundImage="https://i.imgur.com/qkdpN.jpg">
               <h4>My Image Here</h4>
        </Jumbotron>  */}
 
-       </Col>   
+        {/* <p>
+          
+         
+          Website : www.obuenavidez.com<br/>
+          Git Repo : <a href="https://github.com/obuenavidez/" target ="#"> www.github.com/obuenavidez</a><br/>
+  
+          Contact # : 773.567.3930<br/>
+          Email : obuenavidez@gmail.com<br/><br/>
+          <Link to="/sendmessage">  
+          <FormBtn>
+                  Message Me
+          </FormBtn>
+          </Link> 
+          
+
+          
+      </p> */}
+      <LeftNav
+      />
+      </Col>
 
        <Col size="md-8">
-       <Jumbotron>
-              <h4>Video Player Here</h4>
-              <h5>Customer Singing</h5>
-       </Jumbotron>
+
+      <FriendCard3
+                
+                //addItem={this.addItem}
+                //shake={!this.state.score}
+                
+                image="/assets/images/clicky.png"
+                occupation="This application renders different images (of your choice) to the screen. Each image should listen for click events. It keeps track of the user's score. The user's score should be incremented when clicking an image for the first time. The user's score should be reset to 0 if they click the same image more than once.Every time an image is clicked, the images rendered to the page should shuffle themselves in a random order.Once the user's score is reset after an incorrect guess, the game should restart"
+                 
+                url="https://guarded-waters-89693.herokuapp.com/" 
+                
+        />
+        <FormBtnCenter to="/sendmessage">  
+                <a href="https://guarded-waters-89693.herokuapp.com/" target ="#">View Demo</a>
+                </FormBtnCenter>
+                    
+
+       {/* <Hero backgroundImage="/assets/images/clicky.png">
+       <div>
+       <center>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+        
+         <FormBtnCenter to="/sendmessage">  
+         <a href="https://guarded-waters-89693.herokuapp.com/" target ="#">View Demo</a>
+         </FormBtnCenter>
+          </center>  
+      </div>
+     
+       </Hero> */}
+       
        </Col>   
        </Row> 
 
         <Row>
         <Col size="md-4">
-        <p>
-          
          
-          Website : www.obuenavidez.com<br/>
-          Git Repo : www.github.com/obuenavidez<br/>
-          Contact # : 773.567.3930<br/>
-          Email : obuenavidez@gmail.com<br/><br/>
-          <Link to="/sendmessage">  
-          <FormBtn>
-                Message Me
-          </FormBtn>
-          </Link><br/>
-          
-
-         
-          </p>
            
           
            
         </Col>
         
         <Col size="md-8">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet diam tortor, id
-            consequat mauris ullamcorper eu. Orci varius natoque penatibus et magnis dis parturient
-            montes, nascetur ridiculus mus. Pellentesque et dui id justo finibus sollicitudin at et
-            metus. Ut feugiat tellus nec metus commodo, sed suscipit nisi gravida. Duis eget
-            vestibulum quam, ut porttitor sem.   mattis. <br/>
-           <Link to="/projects">  
+        
+       <p>
+           {/* <Link to="/projects">  
            <FormBtn>
                 My Projects +
           </FormBtn>
-          </Link>
-          <br/>
-          <br/>
-          
+          </Link> */}
+           
+          <hr/>
           </p>
-          <br/>
-          <h2> Education Achievements</h2>
+           <h2> Educational Achievements</h2>
 
             <p>
               <h4> Full Flex Web Developer</h4> 

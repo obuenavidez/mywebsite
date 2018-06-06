@@ -8,6 +8,8 @@ import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import Hero from "../../components/Hero";
 
+//import LeftNav from "../../components/LeftNav";
+
 // import Jumbotron from "../../components/Jumbotron";
 // import { Link } from "react-router-dom";
 
@@ -85,18 +87,28 @@ class Users extends Component {
               <h4>My Image Here</h4>
        </Jumbotron>  */}
        <br/>
-       <br/>
-        <p>
+      
+       <div className="content">
+     
+      <ul>
+        <li>
           
+        Website  : <strong><a href="https://fierce-sierra-65975.herokuapp.com/ " target ="#"> www.obuenavidez.com</a></strong> 
+               
+        </li>
+        <li>
+        GitHub Repo : <strong><a href="https://github.com/obuenavidez/" target ="#"> www.github.com/obuenavidez</a></strong> 
+        </li>
+        <li>
+        Email Adress : <strong>obuenavidez@gmail.com</strong>
+        </li>
+        <li>
+         Contact Number :  <strong>( 773 ) 567 -3930</strong>
+        </li>
          
-          Website : www.obuenavidez.com<br/>
-          Git Repo : www.github.com/obuenavidez<br/>
-          Contact # : 773.567.3930<br/>
-          Email : obuenavidez@gmail.com<br/><br/>
-           
-
-         
-          </p>
+        
+      </ul>
+      </div> 
        </Col>   
        
        <Col size="md-8">

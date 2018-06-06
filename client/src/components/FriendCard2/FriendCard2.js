@@ -1,9 +1,9 @@
 import React from "react";
 import "./FriendCard2.css";
 
-import { Link } from "react-router-dom";
-import { FormBtnInfo } from "../../components/Form";
-import { FormBtn } from "../../components/Form";
+// import { Link } from "react-router-dom";
+// import { FormBtnInfo } from "../../components/Form";
+//import { FormBtn } from "../../components/Form";
  
 
 
@@ -21,26 +21,40 @@ const FriendCard2 = props => (
       <ul>
         <li>
           
-          <strong>Name:</strong> {props.name}
+          <strong>Project Name:</strong> {props.name}
         </li>
         <li>
-          <strong>Occupation:</strong> {props.occupation}
+          <strong>Description :</strong> {props.occupation}
         </li>
-        <li>
-          <strong>Location:</strong> {props.location}
-        </li>
+         
         
       </ul>
       <div className="content">
-      <Link to="/projects">  
-           <FormBtnInfo>
-               View Code
-          </FormBtnInfo>
-          <FormBtn>
-               View Demo
-          </FormBtn>
-      </Link>    
-          
+           <a 
+          className="btn btn-warning"
+          href={props.gurl}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          View Code
+        </a>
+        {/* <button onClick={() => props.handleClick(props._id)} >
+          {props.buttonText}
+        </button> */}
+        
+         <a 
+          className="btn btn-success"
+          href={props.url}
+          rel="noopener noreferrer"
+          target="_blank"
+          float = "right"
+        >
+          View Demo
+        </a>
+        {/* <button onClick={() => props.handleClick(props._id)} >
+          {props.buttonText}
+        </button> */}
+       
     </div>
     </div>
     

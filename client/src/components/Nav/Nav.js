@@ -57,11 +57,11 @@ const Nav = props => (
           Message Me
         </a>
       </li>  
-      <li>
+      {/* <li>
       <a href="/inbox" className="navbar-brand">
           INBOX
         </a>
-      </li>  
+      </li>   */}
 
 
        

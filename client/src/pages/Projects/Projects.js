@@ -22,15 +22,16 @@ import data from "../../data.json";
 
 //import { List, ListItem } from "../../components/List";
 
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 //import DeleteBtn from "../../components/DeleteBtn";
 
 //import UpBtn from "../../components/UpBtn";
 //import DownBtn from "../../components/DownBtn";
 //import FriendCard from "../../components/FriendCard/FriendCard";
 
-import Hero from "../../components/Hero";
-import { FormBtn } from "../../components/Form";
+//import Hero from "../../components/Hero";
+//import { FormBtn } from "../../components/Form";
+import LeftNav from "../../components/LeftNav";
 
 
 class Products extends Component {
@@ -135,32 +136,7 @@ class Products extends Component {
 
         <Row>
        <Col size="md-4">
-            <Hero backgroundImage="/assets/images/ODB.NorthWestern.png">
-            
-                    <h3><center>"If you can think it ... I can do it " </center></h3>
-                    {/* <button>More Photos </button> */}
-            </Hero>
-            {/* <Jumbotron backgroundImage="https://i.imgur.com/qkdpN.jpg">
-                    <h4>My Image Here</h4>
-            </Jumbotron>  */}
-
-            <p>
-          
-         
-                Website : www.obuenavidez.com<br/>
-                Git Repo : www.github.com/obuenavidez<br/>
-                Contact # : 773.567.3930<br/>
-                Email : obuenavidez@gmail.com<br/><br/>
-                <Link to="/sendmessage">  
-                <FormBtn>
-                        Message Me
-                </FormBtn>
-                </Link><br/>
-                
-
-                
-            </p>
-                
+       <LeftNav/>
 
             </Col>   
 
@@ -190,6 +166,8 @@ class Products extends Component {
                 image={item.image}
                 occupation={item.occupation}
                 location={item.location}
+                url={item.url}
+                gurl={item.gurl}
                 />
                 
               ))}
